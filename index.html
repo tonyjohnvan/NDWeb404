@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 page</title>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <link rel="stylesheet" href="css/404.css">
+</head>
+<body class="noselect">
+<div class="contentWrapper">
+    <div class="text-wrapper">
+        <div class="overlay"></div>
+        <div class="scanline"></div>
+        <div class="wrapper">
+            <div class="content clearfix">
+
+                <header class="site clearfix">
+                    <div class="col one">
+                        <div class="LogoWrap">
+                            <div id="logo-v"></div>
+                        </div>
+                    </div>
+                    <div class="col two">
+                        <h4>Nimbledroid (tm) <br/> <b>N</b>imbledroid <b>A</b>dvanced <b>V</b>irtual <b>N</b>euron
+                            <b>S</b>ystem (NAVNS)</h4>
+                        <p>----------------------------------------</p>
+                        <p>NAVNS Ver. 4.0.4</p>
+                        <p>(c)2404 Nimbledriod</p>
+                        <p>- Server 404 -</p>
+                    </div>
+                </header>
+
+                <p>Nimbledroid Informational Internal Communication Terminal (NIICT) v 4.0.4</p>
+                <p class="clear"><br/></p>
+
+
+                <p>Welcome to the Nimbledroid Informational Internal Communication Terminal (NIICT). This terminal is
+                    only for internal profession uses and having the highest privileges to the Nimbledroid Advanced
+                    Virtual Neuron System (NAVNS). NAVNS is taking care of most advanced Artificial Intelligence
+                    operations including but not limited to, defending Earth from alien intruders for centuries. Be very
+                    caution interacting with the system since NAVNS bounds firmly with the peace of human society and
+                    the future of the Earth. </p>
+                <p>If you believe you're here by mistake please type <em>back</em> to leave now and pretend you didn't see
+                    any of these, Be advised that your operation will NOT be monitored and NO system administrators
+                    (SYS-ADMs) will track your down because of it and you DON'T need to run any from them to prevent your
+                    been terminated. Thanks for your cooperation!</p>
+                <br/>
+
+                <p>CAUTION! - DO NOT PROCEED WITHOUT THE AWARENESS OF CONSEQUENCES </p>
+
+                <p class="clear"><br/></p>
+
+                <div id="container">
+                    <output></output>
+                    <div id="input-line" class="input-line">
+                        <div class="prompt"></div><div><input class="cmdline" autofocus /></div>
+                        <!--<div class="prompt"></div><div><input class="cmdline" autofocus onkeydown="this.style.width = ((this.value.length) * 13) + 'px';"/><span class="blinky"></span></div>-->
+                    </div>
+                </div>
+                <p class="clear"><br/></p>
+                <nav class="site clear">
+                    <ul>
+                        <li><a href="https://www.facebook.com/NimbleDroid" title="">ERASE ALL DISKS</a></li>
+                        <li><a href="https://twitter.com/nimbledroid" title="">RUN BACKDOOR TROJAN</a></li>
+                        <li><a href="https://plus.google.com/109570463366564630073" title="">ORDER ME PIZZA</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/404terminal.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#title').focus();
+        // Set the command-line prompt to include the user's IP Address
+        //$('.prompt').html('[' + codehelper_ip["IP"] + '@HTML5] # ');
+        $('.prompt').html('[admin@NIICT]:root # ');
+
+        // Initialize a new terminal object
+        var term = new Terminal('#input-line .cmdline', '#container output');
+        term.init();
+    });
+</script>
+</body>
+</html>
